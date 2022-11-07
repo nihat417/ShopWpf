@@ -1,6 +1,9 @@
-﻿using System;
+﻿using ShopProgramWpf.FakeDatas;
+using ShopProgramWpf.Models;
+using System;
 using System.Collections.Generic;
 using System.Linq;
+using System.Linq.Expressions;
 using System.Text;
 using System.Threading.Tasks;
 using System.Windows;
@@ -20,9 +23,12 @@ namespace ShopProgramWpf.UserControls
     /// </summary>
     public partial class Uc_Control : UserControl
     {
+        public Product? product { get; set; }
+
         public Uc_Control()
         {
             InitializeComponent();
+            DataContext = this;
         }
     }
 }

@@ -21,7 +21,7 @@
         <Border  CornerRadius="52" Height="148" Width="180">
             <Border.Background>
                 <ImageBrush 
-                    ImageSource="C:\Users\Администратор\source\repos\ShopWpf\ShopWpf\Images\image.png"
+                    ImageSource="{Binding product.Image}"
                     Stretch="Uniform">
                 </ImageBrush>
             </Border.Background>
@@ -37,12 +37,21 @@
 
             <Grid Grid.Row="0">
                 <Label Content="Name Product:"></Label>
+                <Label HorizontalAlignment="Right"
+                       Width="100"
+                       Content="{Binding product.Name}"/>
             </Grid>
             <Grid Grid.Row="1">
                 <Label Content="Count Product:"></Label>
+                <Label HorizontalAlignment="Right"
+                       Width="100"
+                       Content="{Binding product.Count}"/>
             </Grid>
             <Grid Grid.Row="2">
                 <Label Content="Cost   Product:"></Label>
+                <Label HorizontalAlignment="Right"
+                       Width="100"
+                       Content="{Binding product.Cost}"/>
             </Grid>
             
             
@@ -71,7 +80,7 @@
             </Grid>
 
             <Grid Grid.Column="2">
-                <Button Background="Transparent" >
+                <Button Background="Transparent" HorizontalAlignment="Center" VerticalAlignment="Center" >
                     <Image Source="C:\Users\Администратор\source\repos\ShopWpf\ShopWpf\Images\heart (1).png"></Image>
                 </Button>
             </Grid>

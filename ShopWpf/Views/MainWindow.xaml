@@ -15,7 +15,7 @@
         </Grid.RowDefinitions>
 
         <DockPanel>
-            <Label Width="500" FontSize="40">Salam</Label>
+            <Label Width="500" FontSize="40" ></Label>
         </DockPanel>
 
 

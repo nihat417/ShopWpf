@@ -12,7 +12,8 @@ public class FakeProducts
 {
     public List<Product> products = new()
     {
-        new Product("Iphone",12,12.5f),
-        
+        new Product("C:\\Users\\Администратор\\source\\repos\\ShopWpf\\ShopWpf\\Images\\iphone_11.jpg","Iphone",12,12.5f),
+        new Product("","Samsung",34,1.5f),
+        new Product("","Xiaomi",12,2.5f),
     };
 }
