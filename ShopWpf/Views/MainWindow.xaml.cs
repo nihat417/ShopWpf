@@ -25,16 +25,17 @@ namespace ShopWpf
         public MainWindow()
         {
             InitializeComponent();
-            
+
 
             DataContext = this;
 
             FakeProducts Products = new();
 
-
+            int count = 0;
             foreach (var item in Products.products)
             {
-                Uc_Control uc_Control = new();
+                count = item.Count;
+                Uc_Control uc_Control = new(count);
                 uc_Control.product = item;
                 firstrow.Children.Add(uc_Control);
             }
@@ -42,3 +43,4 @@ namespace ShopWpf
         }
     }
 }
+//

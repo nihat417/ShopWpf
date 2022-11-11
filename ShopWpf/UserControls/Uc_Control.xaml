@@ -43,9 +43,11 @@
             </Grid>
             <Grid Grid.Row="1">
                 <Label Content="Count Product:"></Label>
-                <Label HorizontalAlignment="Right"
-                       Width="100"
-                       Content="{Binding product.Count}"/>
+                <Label
+                    Name="lblConutProduct"
+                    HorizontalAlignment="Right"
+                    Width="100"
+                    Content="{Binding product.Count}"/>
             </Grid>
             <Grid Grid.Row="2">
                 <Label Content="Cost   Product:"></Label>
@@ -53,11 +55,11 @@
                        Width="100"
                        Content="{Binding product.Cost}"/>
             </Grid>
-            
-            
+
+
         </Grid>
-        
-        
+
+
 
         <Grid Grid.Row="2">
             <Grid.ColumnDefinitions>
@@ -67,21 +69,27 @@
             </Grid.ColumnDefinitions>
 
             <Grid Grid.Column="0">
-                <Button Background="Transparent" VerticalAlignment="Center" HorizontalAlignment="Right">
-                    <Image Source="C:\Users\Администратор\source\repos\ShopProgramWpf\ShopProgramWpf\Images\plus (1).png"></Image>
+                <Button
+                    Name="btnAdd"
+                    Click="btnAdd_Click"
+                    Background="Transparent" VerticalAlignment="Center" HorizontalAlignment="Right">
+                    <Image Source="C:\Users\Ekre_cu65\Source\Repos\ShopWpf\ShopWpf\Images\plus(1).png"></Image>
                 </Button>
             </Grid>
 
 
             <Grid Grid.Column="1" >
-                <Button Background="Transparent" HorizontalAlignment="Right" VerticalAlignment="Center">
-                    <Image Source="C:\Users\Администратор\source\repos\ShopProgramWpf\ShopProgramWpf\Images\minus.png"></Image>
+                <Button
+                    x:Name="btnDelete"
+                    Click="btnDelete_Click"
+                    Background="Transparent" HorizontalAlignment="Right" VerticalAlignment="Center">
+                    <Image Source="C:\Users\Ekre_cu65\Source\Repos\ShopWpf\ShopWpf\Images\minus.png"></Image>
                 </Button>
             </Grid>
 
             <Grid Grid.Column="2">
                 <Button Background="Transparent" HorizontalAlignment="Center" VerticalAlignment="Center" >
-                    <Image Source="C:\Users\Администратор\source\repos\ShopWpf\ShopWpf\Images\heart (1).png"></Image>
+                    <Image Source="C:\Users\Ekre_cu65\Source\Repos\ShopWpf\ShopWpf\Images\heart (1).png"></Image>
                 </Button>
             </Grid>
 
