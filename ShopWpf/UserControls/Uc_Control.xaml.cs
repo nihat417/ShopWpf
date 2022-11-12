@@ -26,12 +26,15 @@ namespace ShopProgramWpf.UserControls
     {
         public Product? product { get; set; }
         public int count { get; set; }
+        public float cost { get; set; }
+        public float Sum { get; set; }
 
-        public Uc_Control(int count)
+        public Uc_Control(int count,float cost)
         {
             InitializeComponent();
             DataContext = this;
             this.count = count;
+            this.cost = cost;
         }
 
         public event PropertyChangedEventHandler? PropertyChanged;
@@ -44,6 +47,8 @@ namespace ShopProgramWpf.UserControls
                 return;
 
             product.Count--;
+            Sum += product.Cost;
+            MessageBox.Show($"{Sum}");
             lblConutProduct.Content = product.Count.ToString();
         }
 
@@ -53,7 +58,11 @@ namespace ShopProgramWpf.UserControls
                 return;
 
             product.Count++;
+            Sum -= product.Cost;
+            MessageBox.Show($"{Sum}");
             lblConutProduct.Content = product.Count.ToString();
         }
+
+        
     }
 }

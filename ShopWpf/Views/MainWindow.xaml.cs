@@ -32,12 +32,15 @@ namespace ShopWpf
             FakeProducts Products = new();
 
             int count = 0;
+            float cost;
             foreach (var item in Products.products)
             {
                 count = item.Count;
-                Uc_Control uc_Control = new(count);
+                cost = item.Cost;
+                Uc_Control uc_Control = new(count,cost);
                 uc_Control.product = item;
                 firstrow.Children.Add(uc_Control);
+                
             }
 
         }

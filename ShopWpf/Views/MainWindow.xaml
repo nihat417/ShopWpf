@@ -8,18 +8,33 @@
         Title="Shop"
         Height="450" Width="800"
         Name="Mainwindow">
-    <Grid>
+    <Grid Background="#F4A261">
         <Grid.RowDefinitions>
+            <RowDefinition Height="100"/>
             <RowDefinition/>
-            <RowDefinition Height="300"/>
         </Grid.RowDefinitions>
 
         <DockPanel>
-            <Label Width="500" FontSize="40" ></Label>
+            <Button Background="Transparent" Width="50" BorderThickness="0">
+                <Image Source="C:\Users\Администратор\Source\Repos\ShopWpfs\ShopWpf\Images\marketicon.png"/>
+            </Button>
+            <Button Background="Transparent" Width="50" BorderThickness="0">
+                <Image Source="C:\Users\Администратор\Source\Repos\ShopWpfs\ShopWpf\Images\favorite.png"/>
+            </Button>
+            
+            <Label Content="Mobile Shop" 
+                   VerticalAlignment="Center" 
+                   Width="400" 
+                   FontSize="60"
+                   HorizontalAlignment="Center"></Label>
         </DockPanel>
 
 
-        <WrapPanel Grid.Row="1" Name="firstrow">
-        </WrapPanel>
+        <Grid Grid.Row="1">
+            <ScrollViewer>
+                <WrapPanel  Name="firstrow" VerticalAlignment="Center" HorizontalAlignment="Center">
+            </WrapPanel>
+            </ScrollViewer>
+        </Grid>
     </Grid>
 </Window>

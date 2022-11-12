@@ -13,7 +13,7 @@ public class Product
     public string Image { get; set; }
     public string? Name { get; set; }
     public int Count { get; set; }
-    public float? Cost { get; set; }
+    public float Cost { get; set; }
 
     public Product(string Image,string Name, int Count, float Cost)
     {
