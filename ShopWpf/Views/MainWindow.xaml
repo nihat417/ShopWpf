@@ -15,12 +15,13 @@
         </Grid.RowDefinitions>
 
         <DockPanel>
-            <Button Background="Transparent" Width="50" BorderThickness="0">
+            <Button 
+                Name="Total"
+                Click="Total_Click"
+                Background="Transparent" Width="50" BorderThickness="0">
                 <Image Source="C:\Users\Администратор\Source\Repos\ShopWpfs\ShopWpf\Images\marketicon.png"/>
             </Button>
-            <Button Background="Transparent" Width="50" BorderThickness="0">
-                <Image Source="C:\Users\Администратор\Source\Repos\ShopWpfs\ShopWpf\Images\favorite.png"/>
-            </Button>
+            
             
             <Label Content="Mobile Shop" 
                    VerticalAlignment="Center" 

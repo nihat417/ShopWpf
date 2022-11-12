@@ -22,6 +22,7 @@ namespace ShopWpf
     /// </summary>
     public partial class MainWindow : Window
     {
+        Uc_Control product;
         public MainWindow()
         {
             InitializeComponent();
@@ -43,6 +44,21 @@ namespace ShopWpf
                 
             }
 
+        }
+
+        private void Total_Click(object sender, RoutedEventArgs e)
+        {
+            float sum = 0.0f;
+            //float Sum=0.0f;
+            foreach (var item in firstrow.Children)
+            {
+                product = item as Uc_Control;
+                if (product is null)
+                    return;
+                sum += product.Sum;
+            }
+                MessageBox.Show(sum.ToString());
+           
         }
     }
 }

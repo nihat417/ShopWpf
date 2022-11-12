@@ -79,6 +79,7 @@
 
             <Grid Grid.Column="0">
                 <Button
+                    Width="38"
                     Cursor="Hand"
                     BorderThickness="0"
                     Name="btnAdd"
@@ -91,11 +92,12 @@
 
             <Grid Grid.Column="1" >
                 <Button
+                    Width="38"
                     Cursor="Hand"
                     BorderThickness="0"
                     x:Name="btnDelete"
                     Click="btnDelete_Click"
-                    Background="Transparent" HorizontalAlignment="Left" VerticalAlignment="Center">
+                    Background="Transparent" HorizontalAlignment="Center" VerticalAlignment="Center">
                     <Image Source="C:\Users\Администратор\Source\Repos\ShopWpfs\ShopWpf\Images\minus.png"></Image>
                 </Button>
             </Grid>
